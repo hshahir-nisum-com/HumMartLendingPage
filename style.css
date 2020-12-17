@@ -161,8 +161,12 @@ font-size: 35px;
         height: 35px;
         color: white;
     }
-   .page_footer{
-       font-size: smaller;
+   .footerBox1{
+       display: flex;
+       flex-direction:row;
+   }
+   .footerBox1{
+       font-size: 10px;
    }
    
   }
@@ -215,4 +219,14 @@ font-size: 35px;
 }
 .horizontalLine{
     margin: 10px 0;
+}
+.googlePlay{
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+}
+.appStore{
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
 }
