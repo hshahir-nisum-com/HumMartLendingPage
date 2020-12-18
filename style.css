@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.6;
 }
 #header{
     background-color: black;
@@ -25,7 +27,7 @@
 }
 .container{
     margin: 0 10vw 0 auto;
-  order: 2;
+     order: 2;
 }
 .container > *{
     padding-left: 0.5vw;
@@ -86,94 +88,11 @@
  .fa{     /*       this class represent font awesome */
 font-size: 35px;
 }
-/* //media queries for 1000px */
-@media screen and (max-width: 1000px) {
-    .logo img{
-        width: 138px;
-        height: 30px;
-    }
-    #header{
-        border-bottom: none;
-    }
-    .strip{
-        display: none;
-    }
-   
-    .searchBar .btnSearch{
-        width: 70px;
-        height: 30px;
-    }
-    .searchBar .textBox {
-        
-        width: 300px;
-        height: 10px;
-        color: white;
-    }
-    .slider{
-        display: none;
-    }
 
-}
-/* meda queries for 600px */
-@media screen and (max-width: 600px) {
-    .logo img{
-        width: 138px;
-        height: 22px;
-    }
-    .fa{
-        font-size: 24px;
-    }
-    .navMain{
-        display: flex;
-        flex-wrap: wrap 
-    }
-    .navMain :nth-child(1){
-        order:1;
-    }
-    .navMain :nth-child(5){
-        margin-right: 5vw;
-        order:3;
-        font-size: 8px;
-        margin-right:20px;
-    }
-    .navMain :nth-child(3){
-      order: 2;
-      display:block;
-      margin-left: 25vw;
-    }
-    .navMain :nth-child(4){
-        flex-basis: 100%;
-        height: 0;
-        order: 3;
-        display: none;
-    }
-    .navMain :nth-child(2){
-        order:4;
-    }
-
-    .searchBar .btnSearch{
-        width: 15vw;
-        height: 35px;
-    }
-    .searchBar .textBox {
-        
-        width: 70vw;
-        height: 35px;
-        color: white;
-    }
-   .footerBox1{
-       display: flex;
-       flex-direction:row;
-   }
-   .footerBox1{
-       font-size: 10px;
-   }
-   
-  }
 .footerContainer{
     margin: 10px auto;
     width: 90%;
-    
+
 }
 .page_footer{
     height: 400px;
@@ -229,4 +148,362 @@ font-size: 35px;
     width: 50%;
     height: 50%;
     margin-top: 20px;
+}
+nav{
+    background-color: #7bae23;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    height: 49px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 17px ;
+    padding-bottom: -5px;
+    font-size: 12px;
+}
+
+.MoreBlock{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    display: none;
+
+}
+
+.MoreBlock div ul li{
+    list-style-type: none;
+    margin-top: 5px;
+    font-size:large;
+    color: #777d80;
+}
+.mainImages{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.mainImages2 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.mainImages *{
+    margin: 2px;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f4f5;
+    height: 150px;
+    justify-content: space-between;
+}
+.features1{
+    margin: 40px 0px 0 0;
+}
+
+.features1Body{
+    display: flex;
+    flex-direction: row;
+}
+
+.features1Body div{
+    width: 280px;
+}
+.features1Body i{
+    margin: 10px 10px 0 10px;
+}
+.features1Body p{
+    margin-top: -14px;
+    font-size: 12px;
+    overflow-wrap: break-word;
+    color: rgb(179, 178, 178);
+}
+
+
+.features2{
+    margin: 40px 0px 0 0;
+}
+
+.features2Body{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1px;
+}
+
+.features2Body div{
+    width: 200px;
+}
+.features2Body i{
+    margin: 10px 10px 0 10px;
+}
+.features2Body p{
+    margin-top: 10px;
+    font-size: 12px;
+    overflow-wrap: break-word;
+    color: rgb(179, 178, 178);
+}
+
+
+.features3{
+    margin: 40px 0px 0 0;
+}
+
+.features3Body{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1px;
+}
+
+.features3Body div{
+    width: 200px;
+}
+.features3Body i{
+    margin: 10px 10px 0 10px;
+}
+.features3Body p{
+    margin-top: 10px;
+    font-size: 12px;
+    overflow-wrap: break-word;
+    color: rgb(179, 178, 178);
+}
+.FMCGgoods{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 246, 246, 0.829);
+}
+.FMCG2 ul {
+    display: flex;
+    flex-direction: row !important;
+    list-style-type: none;
+    margin: 20px 10px 10px 10px;
+}
+.FMCG2 ul > .li1{
+    margin-right: 10px;
+}
+.FMCG2_1{
+    border: 2px solid black;
+}
+.FMCG2_1Text a{
+    text-decoration: none;
+    font-size: small;
+    color: rgb(158, 157, 157);
+    font-weight: bold;
+
+}
+.FMCG2_1Text div{
+    margin-top: 3px;
+    text-decoration: none;
+}
+.FMCG2_1Text div > input{
+    float: right;
+    background-color: rgb(233, 89, 36);
+    border-color: tomato;
+    color: white;
+    border-radius: 19px;
+    height: 35px;
+    text-align: center;
+    width: 120px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.FMCG2_1Text div > span{
+    color: rgb(158, 157, 157);
+    font-size: small;
+}
+.FMCG2_1Text h4{
+    font-size: large;
+}
+.FMCGimg {
+    width: 220px;
+    box-shadow: silver;
+}
+.FMCGimg:hover {
+    padding: 2px;
+    box-shadow:  5px 5px 8px 4px gray;
+}
+.FMCG2_2{
+    border: 2px solid black;
+}
+
+
+/* //media queries for 1000px */
+@media screen and (max-width: 1000px) {
+    .logo img{
+        width: 138px;
+        height: 30px;
+    }
+    #header{
+        border-bottom: none;
+    }
+    .strip{
+        display: none;
+    }
+
+    .searchBar .btnSearch{
+        width: 70px;
+        height: 30px;
+    }
+    .searchBar .textBox {
+
+        width: 300px;
+        height: 10px;
+        color: white;
+    }
+    .slider{
+        display: none;
+    }
+    .googlePlay{
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    .appStore{
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+    }
+}
+/* meda queries for 600px */
+@media screen and (max-width: 600px) {
+    .logo img{
+        width: 138px;
+        height: 22px;
+    }
+    .fa{
+        font-size: 24px;
+    }
+    .navMain{
+        display: flex;
+        flex-wrap: wrap
+    }
+    .navMain :nth-child(1){
+        order:1;
+    }
+    .navMain :nth-child(5){
+        margin-right: 5vw;
+        order:3;
+        font-size: 8px;
+        margin-right:20px;
+    }
+    .navMain :nth-child(3){
+      order: 2;
+      display:block;
+      margin-left: 25vw;
+    }
+    .navMain :nth-child(4){
+        flex-basis: 100%;
+        height: 0;
+        order: 3;
+        display: none;
+    }
+    .navMain :nth-child(2){
+        order:4;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .searchBar .btnSearch{
+        width: 15vw;
+        height: 35px;
+    }
+    .searchBar .textBox {
+
+        width: 70vw;
+        height: 35px;
+        color: white;
+    }
+    .googlePlay{
+        width: 30%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    .appStore{
+        width: 30%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    .page_footer{
+        height: auto;
+    }
+   .footerBox1{
+       display: flex;
+       flex-direction:column;
+       font-size: 12px;
+   }
+   nav ul{
+       flex-direction: column;
+   }
+
+   .mainImages{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.mainImages *{
+    margin: 2px;
+}
+
+   .mainImages :nth-child(1){
+    order:2;
+    width: 90vw;
+}
+.mainImages :nth-child(2){
+    order:1;
+}
+.mainImages1{
+    display: flex;
+    flex-direction: row;
+
+}
+.mainImages1 div img{
+    width: 44vw !important;
+    height: 100px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+}
+.features *{
+    width: auto;
+    margin-right: 1px;
+    padding: 5px 0;
+    background-color: #f1f4f5;
+}
+.features1Body p{
+    width: 200px;
+    font-size: 12px;
+    overflow-wrap: break-word;
+}
+.features2Body p{
+    width: 200px;
+    font-size: 12px;
+    overflow-wrap: break-word;
+}
+.features1{
+    padding-left:17px ;
+}
+
 }
