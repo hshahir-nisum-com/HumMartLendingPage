@@ -79,8 +79,22 @@
     background-color: red;
     border: 0px solid red;
 }
+.closebtn,.menuButton{
+    display: none;
+}
 .cart{
     right: 50px;
+}
+.cartCount{
+    position: absolute;
+    color: white;
+    margin: -20px 0 0 -10px;
+    background: tomato;
+    border-radius: 40px;
+    width: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
 }
 .person{
     display: none;
@@ -117,11 +131,17 @@ font-size: 35px;
     text-decoration: none;
     list-style-type:circle;
     color: white;
+} 
+
+.box3Footer  ul{
+    margin-left: -10px;
 }
 .box3Footer  ul li {
     text-decoration: none;
     list-style-type:none;
     color: white;
+    margin-left: 100px;
+    margin: 0; padding: 0;
 }
 .footerBox1 div ul *:hover {
     text-decoration: underline;
@@ -149,8 +169,11 @@ font-size: 35px;
     height: 50%;
     margin-top: 20px;
 }
+
+
 nav{
     background-color: #7bae23;
+    width: 90vw;
 }
 nav ul{
     display: flex;
@@ -167,8 +190,10 @@ nav ul li a{
     text-decoration: none;
     color: white;
     padding: 17px ;
-    padding-bottom: -5px;
     font-size: 12px;
+}
+.sidenavMenu{
+    display: none;
 }
 
 .MoreBlock{
@@ -210,6 +235,15 @@ nav ul li a{
 .mainImages *{
     margin: 2px;
 }
+.mainImages1 div img{
+    width: 29vw;
+    height: 14vw;
+}
+.mainImages2  img{
+    width: 60vw;
+    height: 29vw;
+}
+
 .features{
     display: flex;
     flex-direction: row;
@@ -290,6 +324,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     background-color: rgba(250, 246, 246, 0.829);
+    margin-top: 30px;
 }
 .FMCG2 ul {
     display: flex;
@@ -297,11 +332,16 @@ nav ul li a{
     list-style-type: none;
     margin: 20px 10px 10px 10px;
 }
-.FMCG2 ul > .li1{
-    margin-right: 10px;
+.FMCG2 ul > div > li{
+    margin-right: 25px;
 }
-.FMCG2_1{
-    border: 2px solid black;
+.FMCG2 ul > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.FMCG2_1Text{
+    margin-left: 10px;
 }
 .FMCG2_1Text a{
     text-decoration: none;
@@ -333,16 +373,107 @@ nav ul li a{
     font-size: large;
 }
 .FMCGimg {
-    width: 220px;
-    box-shadow: silver;
+    width: 260px;
 }
 .FMCGimg:hover {
     padding: 2px;
     box-shadow:  5px 5px 8px 4px gray;
 }
-.FMCG2_2{
-    border: 2px solid black;
+
+.slider {
+    display: flex;
+    overflow-x: hidden; 
+  }
+
+.slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+.FMCG1{
+    margin:20px;
 }
+.FMCG1 .txt {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif ;
+    margin-left:20px;
+    text-transform: uppercase;
+}
+.radioBtns{
+    margin-top: 20px;
+    float: right;
+    border: 0px;
+    width: 70px;
+    /* height: 3em; */
+
+}
+
+.categoriesWrapper{
+    background-color: rgba(250, 246, 246, 0.829);
+}
+.categoriesWrapper{
+    margin-top: 50px;
+}
+.categoriesWrapper > h3{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 30px;
+}
+.categories{
+    margin-top: 50px;
+}
+.categories,.column1_ > div, .column2_ > div{
+    display: flex;
+    flex-direction: row;
+    margin-right:30px;
+    margin-bottom: 30px;
+}
+.column1_ > div, .column2_ > div{
+    background-color: white;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 2px;
+}
+.column1_ > div > div > img , .column2_ > div > div > img{
+    width: 300px;
+    height: 300px;
+}
+.heading > span{
+    display: inline-block;
+    margin-top: 90px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading > i{
+    font-size: 35px;
+    float: right;
+    margin-top: 95px;
+    padding-right: 70px;
+    color: #9da6aa;
+}
+.heading > p{
+    color: #9da6aa;
+}
+
+.para{
+    margin-top: 50px;
+   background-color:  rgba(250, 246, 246, 0.829);
+   padding: 25px;
+}
+.para h1{
+    
+    color: black;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.para p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #9da6aa;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
 
 
 /* //media queries for 1000px */
@@ -381,6 +512,7 @@ nav ul li a{
         height: 50%;
         margin-top: 20px;
     }
+    
 }
 /* meda queries for 600px */
 @media screen and (max-width: 600px) {
@@ -388,6 +520,47 @@ nav ul li a{
         width: 138px;
         height: 22px;
     }
+    .menuButton{
+        display: inline;
+    }
+    #mySidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7bae23;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenavMenu{
+    display: inline;
+    position: absolute;
+  top: 10px;
+  right: 100px;
+  font-size: 25px;
+  margin-left: 50px;
+  text-decoration :none;
+  color:  white;
+}
+
+.closebtn {
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration :none;
+  color:  white;
+}
+
+
+.sidenav ul li a:hover {
+  color: #f1f1f1;
+}
     .fa{
         font-size: 24px;
     }
@@ -505,5 +678,54 @@ nav ul li a{
 .features1{
     padding-left:17px ;
 }
+
+/* FMCG good display none becuase it is not performing well */
+.FMCGgoods{
+    /* display: none; */
+    margin-top: 470px;
+}
+
+.categoriesWrapper{
+    margin-top: 50px;
+}
+.categories{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.column1_ > div, .column2_ > div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.column1_ > div, .column2_ > div{
+    background-color: white;
+    border: 1px solid rgb(240, 240, 240);
+    width: 322px;
+    border-radius: 2px;
+    
+}
+.column1_ > div > div > img , .column2_ > div > div > img{
+    width: 150px;
+    height: 150px;
+}
+.heading > span{
+    display: inline-block;
+    margin-top: 45px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.heading > i{
+    font-size: 20px;
+    float: right;
+    margin-top: 45px;
+    padding-right: 35px;
+    color: #9da6aa;
+}
+.heading > p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 
 }
