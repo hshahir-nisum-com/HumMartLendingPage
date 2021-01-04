@@ -1,6 +1,6 @@
 more = document.getElementById("more").onmouseover = () => {
   temp = document.getElementById("MoreBlock");
-  
+
   temp.style.display = "flex";
   temp.onmouseleave = () => {
     temp.style.display = "none";
@@ -22,16 +22,44 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change image every 1 seconds
+  setTimeout(showSlides, 2000); // Change image every 1 seconds
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("side-nav-mbl").style.marginLeft = "0px";
+  document.getElementById("side-nav-mbl").style.display = "inline-block";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("side-nav-mbl").style.marginLeft = "-300px";
 }
+
+function hoverFunc(e) {
+  e.target.style.textDecoration = "underline";
+  e.target.addEventListener("mouseleave", (e) => {
+    e.target.style.textDecoration = "none";
+  });
+}
+
+
+
+window.onscroll = changePos;
+
+function changePos() {
+  var header = document.getElementById("mySidenav");
+  if (window.pageYOffset > 185) {
+    header.style.position = "fixed";
+    header.style.top = "0";
+    header.style.left = "0";
+    header.style.width = "100%";
+  } else {
+    header.style.position = "";
+    header.style.top = "";
+  }
+}
+
+
+
 
 // const flavoursContainer = document.getElementById("slider");
 // const flavoursScrollWidth = flavoursContainer.scrollWidth;
@@ -71,11 +99,4 @@ function closeNav() {
 //     }
 //   }
 // }
-const flavoursContainer = document.getElementById("slider");
-const flavoursScrollWidth = flavoursContainer.scrollWidth;
-// console.log(flavoursContainer.children)
-for (var key in flavoursContainer.children) {
-  if (flavoursContainer.children.hasOwnProperty(key)) {
-      console.log(key + " -> " + flavoursContainer.children[key]);
-  }
-}
+

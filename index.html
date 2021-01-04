@@ -1,537 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>HUM MART</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Super Market in Pakistan</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" type="text/css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-</head>
+  <body class="body-doc">
 
-<body>
+    <div id="side-nav-mbl"  class="side-nav-mbl" >
+        <span class="side-nav-Menu-mbl">
+            <span>Menu</span>
+        <a href="javascript:void(0)" class="close-btn-mbl" onclick="closeNav()">&times;</a>
+        </span>
+      <nav id="side-nav-wrapper"  class="side-nav-wrapper" >
+       
+        <ul class="nav-ul-list">
+          <li><a href="javascript:void(0)">GROCERY & STAPLES</a></li>
+          <li>
+            <a href="javascript:void(0)"> NOODLES SAUCE & FROZEN FOODS</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">BISCUIT SNAKCKS & CHOCOLATES</a>
+          </li>
+          <li><a href="javascript:void(0)">BREAKFAST & DAIRY</a></li>
+          <li><a href="javascript:void(0)">BABY KIDS & TOYS</a></li>
+          <li><a href="javascript:void(0)">BEVERAGES</a></li>
+          <li class="more-block-hover-mbl">
+            <a href="javascript:void(0)" class="more-mbl" id="more-mbl">MORE</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- header start -->
-    <header id="header">Groceries delivery in Karachi / Mobile phones, Cosmetics, Toys & Electronics nationwide</header>
-    <div class="headerlink">
-        <div class="strip">
-            <div class="container">
-                <i class='fas fa-phone-alt'></i> (021) 111 116 278
-                <a href="" id="CustomerCare"> Customer Care</a>
-                <a href="" id="login">Login</a>
+    <div class="for-mbl">
+      <header class="header-wrapper" id="fix">
+        <div class="wrapper-header-fixed">
+          <div id="header-text">
+            <p>
+              Groceries delivery in Karachi / Mobile phones, Cosmetics, Toys &
+              Electronics nationwide
+            </p>
+          </div>
+          <div class="strip-header">
+            <div class="strip-header-text">
+              <i class="fas fa-phone-alt"></i> (021) 111 116 278
+              <a href="" id="CustomerCare"> Customer Care</a>
+              <a href="" id="login">Login</a>
             </div>
-        </div>
-    </div>
-    <main class="main">
-        <div class="navMain">
+          </div>
+
+          <!-- here is logo , search bar person(mobile version) gif and card -->
+
+          <div class="nav-main">
             <div class="logo">
-                <span style="font-size:20px;cursor:pointer" class="menuButton" onclick="openNav()">&#9776; </span>
-                <a class="logo" href="#" title="HumMart.com" aria-label="store logo">
-                    <img src="images/logo.png" title="HumMart.com" alt="HumMart.com" width="210" height="58">
-                </a>
+              <span class="menu-button" onclick="openNav()"> 
+                  <a href="#side-nav-mbl" style="color: #7bae23;
+                                                text-decoration : none"
+                                                 >&#9776;</a>  </span>
+              <a
+                class="logo"
+                href="#"
+                title="HumMart.com"
+                aria-label="store logo"
+              >
+                <img
+                  src="images/logo.png"
+                  title="HumMart.com"
+                  alt="HumMart.com"
+                />
+              </a>
             </div>
             <div class="searchBar">
-                <input id="search" type="text" placeholder="Search entire store here..." maxlength="128"
-                    style="position: relative; vertical-align: top;" class="textBox"><button
-                    class="btnSearch">Search</button>
+              <input
+                id="search"
+                type="text"
+                placeholder="Search entire store here..."
+                maxlength="128"
+                class="text-box"
+              /><button class="btn-search">Search</button>
             </div>
             <div class="person">
-                <i class="fa fa-user" aria-hidden="true" style="color:#7bae23 ;"></i>
+              <i
+                class="fa fa-user"
+                aria-hidden="true"
+                style="color: #7bae23"
+              ></i>
             </div>
             <div class="slider">
-                <img src="https://hummart.com/media/wysiwyg/iconsforhomepage/Toys_Gif.gif" style="margin-right: 156px;"
-                    alt="" id="HeaderGif1">
+              <img
+                src="https://hummart.com/media/wysiwyg/iconsforhomepage/Toys_Gif.gif"
+                alt=""
+                id="HeaderGif1"
+              />
             </div>
             <div class="cart">
-                <i class="fa fa-shopping-cart" aria-hidden="true" style="color: #7bae23;
-                ">
-                    <span class="cartCount">0</span>
-                </i>
+              <i
+                class="fa fa-shopping-cart"
+                aria-hidden="true"
+                style="color: #7bae23"
+              >
+                <span class="cart-count">0</span>
+              </i>
             </div>
-        </div>
-        <nav id="mySidenav" class="sidenav">
-            <span class="sidenavMenu">Menu</span>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul>
-                <li><a href="#">GROCERY & STAPLES</a></li>
-                <li><a href="#"> NOODLES SAUCE & FROZEN FOODS</a></li>
-                <li><a href="#">BISCUIT SNAKCKS & CHOCOLATES</a></li>
-                <li><a href="#">BREAKFAST & DAIRY</a></li>
-                <li><a href="#">BABY KIDS & TOYS</a></li>
-                <li><a href="#">BEVERAGES</a></li>
-                <li class="more-hover"><a href="#" class="more" id="more">MORE</a></li>
-            </ul>
-        </nav>
-        <div class="MoreBlock" id="MoreBlock">
-            <div>
-                <ul>
-                    <li>Fruits</li>
-                    <li>Presonal Care</li>
-                    <li>Furnishing</li>
-                    <li>Ice Cream</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Home Services</li>
-                    <li>Pharmacy</li>
-                    <li>Pet Care</li>
-                    <li>Other Categories</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Mobile Tablets</li>
-                    <li>House Holds</li>
-                    <li>Meat & Sea Foods</li>
-                    <li>Corona Essential</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Electronics</li>
-                    <li>Home & Kitchen</li>
-                    <li>Offer</li>
-                </ul>
-            </div>
-        </div>
+          </div>
 
-        <!-- Heard End -->
+          <!-- menu option  -->
+          <div class="nav-wrapper nav-menu-wrapper">
+            <nav id="mySidenav" class="sidenav main-navigation">
+              <a
+                href="javascript:void(0)"
+                class="close-btn"
+                onclick="closeNav()"
+                >&times;</a
+              >
+              <ul class="main-navigation-ul">
+                <li><a href="javascript:void(0)" onmouseover="hoverFunc(event)">GROCERY & STAPLES</a></li>
+                <li>
+                  <a href="javascript:void(0)" onmouseover="hoverFunc(event)"> NOODLES SAUCE & FROZEN FOODS</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"  onmouseover="hoverFunc(event)">BISCUIT SNAKCKS & CHOCOLATES</a>
+                </li>
+                <li><a href="javascript:void(0)"  onmouseover="hoverFunc(event)">BREAKFAST & DAIRY</a></li>
+                <li><a href="javascript:void(0)"  onmouseover="hoverFunc(event)">BABY KIDS & TOYS</a></li>
+                <li><a href="javascript:void(0)"  onmouseover="hoverFunc(event)">BEVERAGES</a></li>
+                <li class="more-block-hover">
+                  <a href="javascript:void(0)"  onmouseover="hoverFunc(event)" class="more" id="more">MORE</a>
+                </li>
+              </ul>
 
-        <!-- Slider and Images  -->
-        <div class="mainImages" style="width: 100%;">
-            <div class="mainImages1">
-                <div class="subImage1">
-                    <img src="images/vege.jpg" alt="vege">
+              <!-- enddddddd -->
+              <!--  -->
+              <ul class="More-block" id="MoreBlock">
+                <div>
+                  <li onmouseover="hoverFunc(event)">Fruits</li>
+                  <li onmouseover="hoverFunc(event)">Presonal Care</li>
+                  <li onmouseover="hoverFunc(event)">Furnishing</li>
+                  <li onmouseover="hoverFunc(event)">Ice Cream</li>
                 </div>
-                <div class="subImage2">
-                    <img src="images/bundle.jpg" alt="bundle">
+                <div>
+                  <li onmouseover="hoverFunc(event)">Home Services</li>
+                  <li onmouseover="hoverFunc(event)">Pharmacy</li>
+                  <li onmouseover="hoverFunc(event)">Pet Care</li>
+                  <li onmouseover="hoverFunc(event)">Other Categories</li>
                 </div>
-            </div>
-            <div class="mainImages2 mySlides">
-                <img src="images/silkbankNovember.jpg" alt="silkbankNovember">
-            </div>
-            <div class="mainImages2 mySlides">
-                <img src="images/cover2.jpg" alt="silkbankNovember">
-            </div>
+                <div>
+                  <li onmouseover="hoverFunc(event)">Mobile Tablets</li>
+                  <li onmouseover="hoverFunc(event)">House Holds</li>
+                  <li onmouseover="hoverFunc(event)">Meat & Sea Foods</li>
+                  <li onmouseover="hoverFunc(event)">Corona Essential</li>
+                </div>
 
+                <div>
+                  <li onmouseover="hoverFunc(event)">Electronics</li>
+                  <li onmouseover="hoverFunc(event)">Home & Kitchen</li>
+                  <li onmouseover="hoverFunc(event)">Offer</li>
+                </div>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </header>
+
+      <main class="main">
+        <!-- slider start -->
+
+        <div class="main-images main-images-slider">
+          <div class="main-images1">
+            <div class="subImage1">
+              <img src="images/vege.jpg" alt="vege" />
+            </div>
+            <div class="subImage2">
+              <img src="images/bundle.jpg" alt="bundle" />
+            </div>
+          </div>
+
+          <div class="main-images2 mySlides">
+            <img src="images/silkbankNovember.jpg" alt="silkbankNovember" />
+          </div>
+          <div class="main-images2 mySlides">
+            <img src="images/cover2.jpg" alt="silkbankNovember" />
+          </div>
+        </div>
+
         <!-- Slider and Images End -->
+
         <!-- Features -->
-        <div class="features" style="background-color:#f9f9f9;margin: 0px;margin-top: 0px; ">
-            <div class="features1">
-                <div class="features1Body">
-                    <i class="fa fa-truck" aria-hidden="true" style="color:#7bae23 ;"></i>
-                    <div>
-                        <h3>Same/Next Day Delivery</h3> <br>
-                        <p>Free delivery on all orders over Rs. 3,000
-
-                            Rs 100 for orders below Rs. 3,000
-
-                            Flat Rs 200 for Same Day orders</p>
-                    </div>
-                </div>
+        <div class="features">
+          <div class="features1Body">
+            <i
+              class="fa fa-truck"
+              aria-hidden="true"
+              style="color: #7bae23"
+            ></i>
+            <div>
+              <h3>Same/Next Day Delivery</h3>
+              <br />
+              <p>
+                Free delivery on all orders over Rs. 3,000 <br />
+                Rs 100 for orders below Rs. 3,000 Flat Rs 200 for Same Day
+                orders
+              </p>
             </div>
-            <div class="features2">
-                <div class="features2Body">
-                    <i class="fa fa-truck" aria-hidden="true" style="color:#7bae23 ;"></i>
-                    <div>
-                        <h3>Cash on Delivery</h3>
-                        <p>You pay when rider comes at your address.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="features2Body">
+            <i
+              class="fa fa-truck"
+              aria-hidden="true"
+              style="color: #7bae23"
+            ></i>
+            <div>
+              <h3>Cash on Delivery</h3>
+              <br />
+              <p>You pay when rider comes at your address.</p>
             </div>
-            <div class="features3">
-                <div class="features3Body">
-
-                    <i class="fa fa-phone" aria-hidden="true" style="color:#7bae23 ;"></i>
-                    <div>
-                        <h3>Online Support</h3>
-                        <p>Customer support from <br>
-                            9AM - Midnight <br>
-                            (021)111 116 278</p>
-                    </div>
-                </div>
+          </div>
+          <div class="features3Body">
+            <i
+              class="fa fa-phone"
+              aria-hidden="true"
+              style="color: #7bae23"
+            ></i>
+            <div>
+              <h3>Online Support</h3>
+              <br />
+              <p>
+                Customer support from <br />
+                9AM - Midnight <br />
+                (021)111 116 278
+              </p>
             </div>
+          </div>
         </div>
         <!-- features End -->
 
-        <!-- Bundle sliding -->
+        <!-- FMCG ITEMS START -->
         <div class="FMCGgoods">
-            <div class="FMCG1">
+          <div class="FMCG-heading">
+            <span class="txt">New Bundle Offer</span>
+            <span class="radioBtns">
+              <input
+                type="radio"
+                id="firstRadioBtn"
+                name="firstRadioBtn"
+                onclick="radioButton1()"
+              />
+              <input
+                type="radio"
+                id="secondRadioBtn"
+                name="secondRadioBtn"
+                onclick="radioButton2()"
+              />
+            </span>
+          </div>
+          <hr style="border-bottom: 2px solid gray" />
+          <div class="FMCG2-content">
+            <ul class="FMCG-slider" id="slider">
+              <li class="li1 slide FMCG2_1" id="slide-1">
                 <div>
-                    <span class="txt">New Bundle Offer</span>
-                    <span class="radioBtns">
-                        <input type="radio" id="firstRadioBtn" name="firstRadioBtn" onclick="radioButton1()">
-                        <input type="radio" id="secondRadioBtn" name="secondRadioBtn" onclick="radioButton2()">
-                    </span>
+                  <img src="images/1.jpg" alt="imgMissing" class="FMCGimg" />
                 </div>
-            </div>
-            <hr style="border-bottom: 2px solid gray;">
-            <div class="FMCG2" style="margin-top: 10px;">
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
 
-                <ul class="slider" id="slider">
+              <li class="li1 slide">
+                <div>
+                  <img src="images/2.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
 
-                    <li class="li1 slide" id="slide-1">
-                        <div class="FMCG2_1">
-                            <div>
-                                <img src="images/1.jpg" alt="imgMissing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
 
-                    <li class="li1 slide">
-                        <div class="FMCG2_2">
-                            <div>
-                                <img src="images/2.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/3.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
 
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/4.jpg" alt="imgMissing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
 
-                    <li class="li1 slide">
-                        <div class="FMCG2_1">
-                            <div>
-                                <img src="images/3.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/5.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
 
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/4.jpg" alt="imgMissing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/5.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/1.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/7.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/3.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/1.jpg" alt="img Missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li1 slide">
-                        <div>
-                            <div>
-                                <img src="images/1.jpg" alt="img missing" class="FMCGimg">
-                            </div>
-                            <div class="FMCG2_1Text">
-                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE
-                                </a>
-                                <div>
-                                    <span style="text-decoration: line-through;">Rs 2000</span>
-                                    <input type="button" value="ADD TO CART">
-                                </div>
-                                <h4>RS 1050</h4>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/1.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/7.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/3.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/1.jpg" alt="img Missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
+              <li class="li1 slide">
+                <div>
+                  <img src="images/1.jpg" alt="img missing" class="FMCGimg" />
+                </div>
+                <div class="FMCG2_1Text">
+                  <a href="#"
+                    >BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite
+                    Sachet 8.3 gm FREE
+                  </a>
+                  <div>
+                    <span style="text-decoration: line-through">Rs 2000</span>
+                    <input type="button" value="ADD TO CART" />
+                  </div>
+                  <h4>RS 1050</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-
-
-        <!-- bundle sliding end -->
+        <!-- FMCG ITEMS END -->
 
         <!-- hummart categories division -->
-        <div class="categoriesWrapper">
-            <h3>Categories</h3>
+        <div class="categories-wrapper">
+          <h3>Categories</h3>
 
-
-            <div class="categories">
-
-                <div class="column1">
-                    <div class="column1_">
-                        <div>
-                            <div> <img src="images/1.jpg" alt=" image missing" /> </div>
-                            <div class="heading column1_Text">
-                                <span>Grocery & Staples</span>
-                                <p>
-                                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta & Soups, Jam, Honey &
-                                    Spreads</p>
-                            </div>
-                            <div class="angleIcon">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="column1_">
-                        <div>
-                            <div> <img src="images/2.jpg" alt=" image missing" /> </div>
-                            <div class="heading column1_Text">
-                                <span>Grocery & Staples</span>
-                                <p>
-                                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta & Soups, Jam, Honey &
-                                    Spreads</p>
-
-                            </div>
-                            <div class="angleIcon">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column1_">
-                        <div>
-                            <div> <img src="images/3.jpg" alt=" image missing" /> </div>
-                            <div class="heading column1_Text">
-                                <span>Grocery & Staples</span>
-                                <p>
-                                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta & Soups, Jam, Honey &
-                                    Spreads</p>
-                            </div>
-                            <div class="angleIcon">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
+          <div class="categories-wrapper-column">
+            <div class="column1">
+              <div class="column1_">
+                <div>
+                  <img src="images/1.jpg" alt=" image missing" />
                 </div>
-                <div class="column2">
-                    <div class="column2_">
-                        <div>
-                            <div> <img src="images/4.jpg" alt=" image missing" /> </div>
-                            <div class="heading column1_Text">
-                                <span>Grocery & Staples</span>
-                                <p>
-                                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta & Soups, Jam, Honey &
-                                    Spreads</p>
-                            </div>
-                            <div class="angleIcon">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column2_">
-                        <div>
-                            <div> <img src="images/5.jpg" alt=" image missing" /> </div>
-                            <div class="heading column1_Text">
-                                <span>Grocery & Staples</span>
-                                <p>
-                                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta & Soups, Jam, Honey &
-                                    Spreads</p>
-                            </div>
-                            <div class="angleIcon">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column2_">
-                        <div>
-                            <div> <img src="images/6.jpg" alt=" image missing" /> </div>
-                            <div class="heading column1_Text">
-                                <span>Grocery & Staples</span>
-                                <p>
-                                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta & Soups, Jam, Honey &
-                                    Spreads</p>
-                            </div>
-                            <div class="angleIcon">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="heading column1_Text">
+                  <span>Grocery & Staples</span>
+                  <p>
+                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta &
+                    Soups, Jam, Honey & Spreads
+                  </p>
                 </div>
+                <div class="angleIcon">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="column1_">
+                <div><img src="images/2.jpg" alt=" image missing" /></div>
+                <div class="heading column1_Text">
+                  <span>Grocery & Staples</span>
+                  <p>
+                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta &
+                    Soups, Jam, Honey & Spreads
+                  </p>
+                </div>
+                <div class="angleIcon">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="column1_">
+                <div><img src="images/3.jpg" alt=" image missing" /></div>
+                <div class="heading column1_Text">
+                  <span>Grocery & Staples</span>
+                  <p>
+                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta &
+                    Soups, Jam, Honey & Spreads
+                  </p>
+                </div>
+                <div class="angleIcon">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
             </div>
+            <div class="column2">
+              <div class="column2_">
+                <div><img src="images/4.jpg" alt=" image missing" /></div>
+                <div class="heading column1_Text">
+                  <span>Grocery & Staples</span>
+                  <p>
+                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta &
+                    Soups, Jam, Honey & Spreads
+                  </p>
+                </div>
+                <div class="angleIcon">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="column2_">
+                <div><img src="images/5.jpg" alt=" image missing" /></div>
+                <div class="heading column1_Text">
+                  <span>Grocery & Staples</span>
+                  <p>
+                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta &
+                    Soups, Jam, Honey & Spreads
+                  </p>
+                </div>
+                <div class="angleIcon">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="column2_">
+                <div><img src="images/6.jpg" alt=" image missing" /></div>
+                <div class="heading column1_Text">
+                  <span>Grocery & Staples</span>
+                  <p>
+                    Noodles, Baking & Dessert Items, Sauces & Ketchups, Pasta &
+                    Soups, Jam, Honey & Spreads
+                  </p>
+                </div>
+                <div class="angleIcon">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- hummart categories divison end -->
 
         <div class="para">
-            <h3>Online Supermarket, Delivery in Karachi, Pakistan</h3>
-            <p>Ever wondered of entering a grocery store and getting an overview of products sections and get to grab
-                the required product from there?
-                The alternate is our search bar of HumMart where you can search from a wide range of categories
-                including grocery and staples,
-                home furnishing, breakfast and dairy, instant foods, biscuits and snacks, beverages, household needs,
-                personal care, home and kitchen,
-                baby products, fruits and vegetables, ice creams and a lot more. Now with online phones and accessories
-                purchase and with
-                easy and timely home delivery all over Pakistan.
-                The online shopping of grocery is a blessing to get the required products over a few clicks.
-                We at HumMart provides our customers with the best deals to get value addition on the purchase of
-                products available online as a bundle offer.
-                If you are in a mood to mingle with friends but you got a grocery list in your pocket, just visit
-                HumMart and order the grocery to get it delivered right at your home while you get yourself entertained
-                with friends.
-                Want to cook your favorite dish, no need to worry for the items to prepare a mouthwatering dish. HumMart
-                offers you ample products to get the ingredients for the dish. We will provide you the products through
-                express delivery within 2 hours.
-                You have the independence to opt out from numerous products as HumMart focuses to bring utmost
-                facilities through its online grocery store and adding value in life of our valued customers. You need
-                to stay at your home, visit hummart.com through your laptop, smartphone or even from phone application.
-            </p>
+          <h3>Online Supermarket, Delivery in Karachi, Pakistan</h3>
+          <p>
+            Ever wondered of entering a grocery store and getting an overview of
+            products sections and get to grab the required product from there?
+            The alternate is our search bar of HumMart where you can search from
+            a wide range of categories including grocery and staples, home
+            furnishing, breakfast and dairy, instant foods, biscuits and snacks,
+            beverages, household needs, personal care, home and kitchen, baby
+            products, fruits and vegetables, ice creams and a lot more. Now with
+            online phones and accessories purchase and with easy and timely home
+            delivery all over Pakistan. The online shopping of grocery is a
+            blessing to get the required products over a few clicks. We at
+            HumMart provides our customers with the best deals to get value
+            addition on the purchase of products available online as a bundle
+            offer. If you are in a mood to mingle with friends but you got a
+            grocery list in your pocket, just visit HumMart and order the
+            grocery to get it delivered right at your home while you get
+            yourself entertained with friends. Want to cook your favorite dish,
+            no need to worry for the items to prepare a mouthwatering dish.
+            HumMart offers you ample products to get the ingredients for the
+            dish. We will provide you the products through express delivery
+            within 2 hours. You have the independence to opt out from numerous
+            products as HumMart focuses to bring utmost facilities through its
+            online grocery store and adding value in life of our valued
+            customers. You need to stay at your home, visit hummart.com through
+            your laptop, smartphone or even from phone application.
+          </p>
         </div>
 
-
-    </main>
-
-
-    <!-- from here page footer is start -->
-    <footer class="page_footer">
-        <div class="footerContainer">
+        <!-- from here page footer is start -->
+        <footer class="page_footer">
+          <div class="footerContainer">
             <div class="footerBox1">
-                <div class="box1Footer">
-                    <h4>HUMMART</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Sell on HUMMART</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="box2Footer">
-                    <h4>HELP</h4>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">How to order</a></li>
-                        <li><a href="#">How to Pay</a></li>
-                        <li><a href="#">Return & Refund</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Easy Paisa</a></li>
-                    </ul>
-                </div>
-                <div class="box3Footer">
-                    <h4>CONTACT INFORMATION</h4>
-                    <ul>
-                        <li>PHONE</li>
-                        <li>(021) 111 116 278</li>
-                        <li>EMAIL</li>
-                        <li>customer@hummart.com</li>
-                        <li>WORKING DAYS/HOURS</li>
-                        <li>Mon - Sun / 9:00AM - 9:00PM</li>
-                    </ul>
-                </div>
-                <div class="box4Footer">
-                    <h4>MOBILE APPS</h4>
-                    <p><img src="images/google-play.png" alt="google img " class="googlePlay"></p>
-                    <p><img src="images/iphone.png" alt="iphone gallery" class="appStore"></p>
-                </div>
+              <div class="box1Footer">
+                <h4>HUMMART</h4>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Sell on HUMMART</a></li>
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="box2Footer">
+                <h4>HELP</h4>
+                <ul>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">How to order</a></li>
+                  <li><a href="#">How to Pay</a></li>
+                  <li><a href="#">Return & Refund</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Easy Paisa</a></li>
+                </ul>
+              </div>
+              <div class="box3Footer">
+                <h4>CONTACT INFORMATION</h4>
+                <ul>
+                  <li>PHONE</li>
+                  <li>(021) 111 116 278</li>
+                  <li>EMAIL</li>
+                  <li>customer@hummart.com</li>
+                  <li>WORKING DAYS/HOURS</li>
+                  <li>Mon - Sun / 9:00AM - 9:00PM</li>
+                </ul>
+              </div>
+              <div class="box4Footer">
+                <h4>MOBILE APPS</h4>
+                <p>
+                  <img
+                    src="images/google-play.png"
+                    alt="google img "
+                    class="googlePlay"
+                  />
+                </p>
+                <p>
+                  <img
+                    src="images/iphone.png"
+                    alt="iphone gallery"
+                    class="appStore"
+                  />
+                </p>
+              </div>
             </div>
-            <hr class="horizontalLine">
+            <hr class="horizontalLine" />
             <div class="footerBox2">
-                <p>© Hummart.com 2020. All Rights Reserved
-                    Powered By Matech CO</p>
+              <p>
+                © Hummart.com 2020. All Rights Reserved Powered By Matech CO
+              </p>
             </div>
-        </div>
-    </footer>
-
-    <!-- the end -->
+          </div>
+        </footer>
+      </main>
+    </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
