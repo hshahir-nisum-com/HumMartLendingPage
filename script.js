@@ -35,10 +35,10 @@ function closeNav() {
 }
 
 function hoverFunc(e) {
-  e.target.style.textDecoration = "underline";
-  e.target.addEventListener("mouseleave", (e) => {
-    e.target.style.textDecoration = "none";
-  });
+  // e.target.style.textDecoration = "underline";
+  // e.target.addEventListener("mouseleave", (e) => {
+  //   e.target.style.textDecoration = "none";
+  // });
 }
 
 
