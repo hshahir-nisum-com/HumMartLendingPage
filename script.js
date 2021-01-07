@@ -34,12 +34,6 @@ function closeNav() {
   document.getElementById("side-nav-mbl").style.marginLeft = "-300px";
 }
 
-function hoverFunc(e) {
-  // e.target.style.textDecoration = "underline";
-  // e.target.addEventListener("mouseleave", (e) => {
-  //   e.target.style.textDecoration = "none";
-  // });
-}
 
 
 

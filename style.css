@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.body-doc {
-  /* display: flex; */
-}
-/* header start  */
 .side-nav-mbl {
   display: none;
 
@@ -57,7 +53,6 @@
   margin: 10px auto;
   width: 1100px;
   margin-top: 30px;
-  /* height: 70px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,7 +78,6 @@
   margin-top: 4px;
   margin-right: 16px;
   background: #ddd;
-  /* font-size: 15px; */
   border: none;
   cursor: pointer;
   margin: 0;
@@ -134,30 +128,27 @@
   padding: 0px 0px;
   font-size: 12px;
 }
-.More-block div li:hover{
+.more-block li ul li:hover{
   text-decoration: underline;
 }
 .more-block-hover:hover {
   max-height: inherit;
   opacity: 1;
 }
-.More-block  li {
+.more-block  li {
   display: inline-block;
   width:200px;
-  /* height: 10px; */
 }
 
-.More-block > li > ul{
+.more-block > li > ul{
   display: block;
-  /* border: 5px solid black; */
-  /* background-color: #000; */
   list-style-type: none;
   flex-direction: column;
 }
 .main-navigation {
   position: relative;
 }
-.More-block {
+.more-block {
   display: flex;
   background-color: white;
   flex-direction: row;
@@ -168,7 +159,7 @@
   width: 100%;
   padding: 10px 0px;
 }
-.More-block {
+.more-block {
   display: none;
 }
 /* header styling */
@@ -212,34 +203,32 @@
   justify-content: space-evenly;
   align-items: baseline;
 }
-.features1Body {
+.features1-body {
   display: flex;
   flex-direction: row;
   flex: 4;
   padding: 15px;
 }
-.features1Body i {
+.features1-body i {
   margin: 10px 10px 0 10px;
 }
 
-.features2Body {
+.features2-body {
   display: flex;
   flex-direction: row;
   flex: 4;
   padding: 15px;
-  /* justify-content: space-around; */
 }
-.features2Body i {
+.features2-body i {
   margin: 10px 10px 0 10px;
 }
-.features3Body {
+.features3-body {
   display: flex;
   flex-direction: row;
   flex: 4;
   padding: 15px;
-  /* justify-content: space-around; */
 }
-.features3Body i {
+.features3-body i {
   margin: 10px 10px 0 10px;
 }
 
@@ -247,7 +236,7 @@
 
 /*  FMCG styling*/
 
-.FMCGgoods {
+.FMCG-goods {
   display: flex;
   flex-direction: column;
   background-color: rgba(250, 246, 246, 0.829);
@@ -264,7 +253,7 @@
   margin-left: 20px;
   text-transform: uppercase;
 }
-.radioBtns {
+.radio-btns {
   margin-top: 20px;
   float: right;
   border: 0px;
@@ -285,23 +274,23 @@
   flex-direction: row;
 }
 
-.FMCG2_1Text {
+.FMCG2_1-text {
   margin-left: 10px;
 }
-.FMCG2_1Text a {
+.FMCG2_1-text a {
   text-decoration: none;
   font-size: small;
   color: rgb(158, 157, 157);
   font-weight: bold;
 }
-.FMCG2_1Text div {
+.FMCG2_1-text div {
   margin-top: 3px;
   text-decoration: none;
 }
-.FMCG2_1Text div > h4{
+.FMCG2_1-text div > h4{
   display: inline;
 }
-.FMCG2_1Text div > input {
+.FMCG2_1-text div > input {
   /* float: right; */
   margin-left: 5px;
   display: inline;
@@ -314,17 +303,17 @@
   width: 100px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.FMCG2_1Text div > span {
+.FMCG2_1-text div > span {
   color: rgb(158, 157, 157);
   font-size: small;
 }
-.FMCG2_1Text h4 {
+.FMCG2_1-text h4 {
   font-size: large;
 }
-.FMCGimg {
+.FMCG-img {
   width: 260px;
 }
-.FMCGimg:hover {
+.FMCG-img:hover {
   /* padding: 2px; */
   box-shadow: 5px 5px 8px 4px gray;
 }
@@ -386,7 +375,7 @@
   padding-bottom: 10px;
   padding: 10px 10px;
 }
-.angleIcon {
+.angle-icon {
   display: inline-block;
   color: #9da6aa;
   padding-top: 15%;
@@ -421,18 +410,18 @@
 }
 
 /* footer */
-.footerContainer {
+.footer-container {
   margin: 10px auto;
   width: 90%;
 }
-.page_footer {
+.page-footer {
   height: 400px;
   background-color: #272723;
   display: flex;
   flex-direction: column;
   color: white;
 }
-.footerBox1 {
+.footer-box1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -444,7 +433,7 @@
 .footerBox2 {
   margin-top: 40px;
 }
-.footerBox1 div ul * {
+.footer-box1 div ul * {
   text-decoration: none;
   list-style-type: circle;
   color: white;
@@ -461,28 +450,28 @@
   margin: 0;
   padding: 0;
 }
-.footerBox1 div ul *:hover {
+.footer-box1 div ul *:hover {
   text-decoration: underline;
 }
 
-.footerBox1 div {
+.footer-box1 div {
   margin-top: 20px;
 }
-.footerBox1 div ul {
+.footer-box1 div ul {
   margin-top: 10px;
 }
-.footerBox1 div ul li {
+.footer-box1 div ul li {
   margin-left: 14px;
 }
 .horizontalLine {
   margin: 10px 0;
 }
-.googlePlay {
+.google-play {
   width: 50%;
   height: 50%;
   margin-top: 20px;
 }
-.appStore {
+.app-store {
   width: 50%;
   height: 50%;
   margin-top: 20px;
@@ -614,9 +603,9 @@
     display: flex;
     flex-direction: column;
   }
-  .features1Body i,
-  .features2Body i,
-  .features3Body i {
+  .features1-body i,
+  .features2-body i,
+  .features3-body i {
     padding-top: 25px;
   }
   .features * {
@@ -625,7 +614,7 @@
     background-color: #f1f4f5;
   }
 
-  .features3Body {
+  .features3-body {
     width: 340px;
   }
 
@@ -682,10 +671,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  .angleIcon {
+  .angle-icon {
     margin-right: 5px;
   }
-  .angleIcon i {
+  .angle-icon i {
     font-size: 40px;
   }
 
@@ -693,23 +682,23 @@
 
   /* footer styling  start */
 
-  .page_footer {
+  .page-footer {
     height: auto;
     width: 340px;
     margin: 0 auto;
   }
-  .footerBox1 {
+  .footer-box1 {
     display: flex;
     flex-direction: column;
     font-size: 12px;
   }
 
-  .googlePlay {
+  .google-play {
     width: 30%;
     height: 50%;
     margin-top: 20px;
   }
-  .appStore {
+  .app-Store {
     width: 30%;
     height: 50%;
     margin-top: 20px;
@@ -740,7 +729,7 @@
   .nav-ul-list {
     list-style-type: none;
   }
-  .side-nav-Menu-mbl {
+  .side-nav-menu-mbl {
     
     display: inline-block;
     background-color: #7bae23;
@@ -755,7 +744,7 @@
     position: relative;
     bottom: 5px;
   }
-   .side-nav-Menu-mbl span{
+   .side-nav-menu-mbl span{
     position: relative;
     bottom: 5px;
    }
@@ -794,7 +783,7 @@
     color: white;
   } */
 
-  .FMCGgoods {
+  .FMCG-goods {
     display: none;
   }
   .nav-wrapper {
